@@ -12,9 +12,12 @@ function App() {
 
   return (
     <>
-      
+      <ShowResult />
+      <IncButton />
+      <DecButton />
+      <ResetButton />
     </>
   )
 }
 
-export default App
+export default App;
