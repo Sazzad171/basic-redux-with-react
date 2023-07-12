@@ -8,13 +8,13 @@ const ShowLayouts = () => {
         layout,
         loading,
         error
-    } = useSelector((state) => state);
+    } = useSelector((state) => state.layout);
 
     const dispatch = useDispatch();
 
     useEffect(() => {
         dispatch(getAllLayouts());
-    }, []);
+    }, [dispatch]);
 
     return (
         <section>

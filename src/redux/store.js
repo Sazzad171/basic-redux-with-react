@@ -6,8 +6,8 @@ import layoutReducer from "../services/reduces/layoutReducer";
 
 // combine
 const rootreducer = combineReducers({
-    counterReducer: counterReducer,
-    layoutReducer: layoutReducer
+    counter: counterReducer,
+    layout: layoutReducer
 });
 
 // const store = createStore(counterReducer);

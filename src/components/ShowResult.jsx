@@ -6,7 +6,7 @@ import { useSelector } from 'react-redux';
 const ShowResult = () => {
 
     // get state
-    const count = useSelector((state) => state.count);
+    const count = useSelector((state) => state.counter.count);
 
   return (
     <div>

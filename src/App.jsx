@@ -12,10 +12,10 @@ function App() {
 
   return (
     <>
-      {/* <ShowResult />
+      <ShowResult />
       <IncButton />
       <DecButton />
-      <ResetButton /> */}
+      <ResetButton />
       <ShowLayouts />
     </>
   )
