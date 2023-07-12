@@ -15,7 +15,7 @@ export const getAllLayouts = () => async (dispatch) => {
         const res = await axios.get("https://layout.layoutdesign.io/api/version_1/layouts?&per_page=10");
         dispatch({
             type: GET_LAYOUT_SUCCESS,
-            payload: res.data
+            payload: res.data.data
         });
     }
     catch (err) {

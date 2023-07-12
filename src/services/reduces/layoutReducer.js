@@ -9,7 +9,7 @@ import {
 const initialState = {
     layout: [],
     loading: false,
-    error
+    error: false
 }
 
 // reducer function
@@ -20,17 +20,17 @@ const layoutReducer = (state = initialState, action) => {
                 ...state,
                 loading: true
             }
-            break;
         case GET_LAYOUT_SUCCESS:
             return {
-                
+                layout: action.payload,
+                loading: false
             }
-            break;
         case GET_LAYOUT_FAILED:
             return {
-
+                layout: [],
+                loading: false,
+                error: action.payload
             }
-            break;
         default:
             return state;
     }
